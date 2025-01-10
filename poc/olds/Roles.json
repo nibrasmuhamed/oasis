@@ -1,0 +1,624 @@
+[
+  {
+    "name": "operatorAdmin",
+    "description": "operator admin",
+    "permissions": [
+      "topGroupMetrics",
+      "stations_getConfigurationV1p6",
+      "stations_getDiagnosticsV1p6",
+      "stations_updateFirmwareV1p6",
+      "stations_unlockConnectorV1p6",
+      "stations_sendLocalistV1p6",
+      "stations_resetV1p6",
+      "stations_remoteStartTransactionV2P1",
+      "stations_remoteStopTransactionV2P1",
+      "stations_remoteStartTransaction",
+      "stations_remoteStopTransaction",
+      "create attribute",
+      "get attribute by name",
+      "get all attributes",
+      "balance notification",
+      "balance update",
+      "get cache statistics",
+      "get customer by id",
+      "create customer",
+      "delete customer",
+      "update customer",
+      "get all customers",
+      "search customers",
+      "create debit",
+      "get ocpp reservation",
+      "create ocpp reservation",
+      "update ocpp reservation",
+      "delete ocpp reservation",
+      "Create Offer",
+      "Update Offer",
+      "Get Offer",
+      "Get All Offers",
+      "Delete Offer",
+      "get balance by id",
+      "recharge balance",
+      "authorize transaction",
+      "initiate transaction",
+      "cancel transaction",
+      "finalize transaction",
+      "update resource",
+      "rate usage",
+      "callback",
+      "get payments by subscribed offer ID",
+      "get payments by customer ID",
+      "create refund",
+      "create reservation",
+      "get all reservations",
+      "get reservation by id",
+      "delete reservation",
+      "update reservation",
+      "cancel reservation",
+      "start reservation",
+      "end reservation",
+      "Create Resource",
+      "Get Resource",
+      "Get All Resources",
+      "Delete Resource",
+      "get service by serviceCode",
+      "get all services",
+      "create service",
+      "get payments by subscriptionId",
+      "start accounting",
+      "initiate session",
+      "update session",
+      "get session by id",
+      "update accounting",
+      "terminate session",
+      "get station metrics",
+      "get top customer metrics",
+      "create station",
+      "delete station",
+      "update station",
+      "get all stations",
+      "subscribe",
+      "unsubscribe",
+      "get subscription by id",
+      "set subscription validity",
+      "renew subscribed offer",
+      "load product pricing offer",
+      "get events",
+      "create UOM",
+      "get UOM by name",
+      "get all UOMs",
+      "add new user",
+      "list all users",
+      "delete user",
+      "set variables request",
+      "get variables request",
+      "reset request",
+      "get base report",
+      "send change availability request",
+      "send boot notification request",
+      "send status notification request",
+      "send heartbeat request",
+      "send data transfer request to CSMS",
+      "create data transfer request to station",
+      "send notify report request",
+      "create transaction",
+      "authorization handler",
+      "notify event handler",
+      "create station reservation handler",
+      "update reservation status handler",
+      "cancel station reservation handler",
+      "boot notification",
+      "status notification",
+      "heartbeat",
+      "data transfer to csms",
+      "data transfer to station",
+      "change availability",
+      "reserve now",
+      "cancel reservation",
+      "graphQL for customer service",
+      "graphQL for pricing service",
+      "graphQL for common module",
+      "graphQL for reservation module",
+      "graphQL for station service",
+      "graphQL for config service",
+      "get cache",
+      "TMF_createUsageConsumption",
+      "TMF_retrieveUsageConsumption",
+      "TMF_listUsageConsumption",
+      "TMF_deleteUsageConsumption",
+      "TMF_createIndividual",
+      "TMF_getIndividual",
+      "TMF_listIndividual",
+      "TMF_patchIndividual",
+      "TMF_deleteIndividual",
+      "TMF_createOrganization",
+      "TMF_getOrganization",
+      "TMF_listOrganization",
+      "TMF_patchOrganization",
+      "TMF_deleteOrganization",
+      "get_permissions"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "dashboard",
+        "permissionList": [
+          "view"
+        ]
+      },
+      {
+        "resourceName": "station",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "reservation",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "delete",
+          "update"
+        ]
+      },
+      {
+        "resourceName": "subscription",
+        "permissionList": [
+          "create",
+          "update",
+          "renew",
+          "view",
+          "unsubscribe"
+        ]
+      },
+      {
+        "resourceName": "uom",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "resource",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "service",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "offer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "operatorUser",
+    "description": "operatorUser",
+    "permissions": [
+      "get customer by id",
+      "create customer",
+      "delete customer",
+      "update customer",
+      "get all customers",
+      "search customers",
+      "subscribe",
+      "unsubscribe",
+      "get subscription by id",
+      "set subscription validity",
+      "renew subscribed offer",
+      "Get Offer",
+      "Get All Offers",
+      "get station by id",
+      "get all stations",
+      "get_permissions"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "offer",
+        "permissionList": [
+          "list",
+          "view"
+        ]
+      },
+      {
+        "resourceName": "subscription",
+        "permissionList": [
+          "subscribe",
+          "unsubscribe"
+        ]
+      },
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "station",
+        "permissionList": [
+          "list",
+          "view"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "systemUser",
+    "description": "system",
+    "permissions": [
+      "get all operators",
+      "get operator by ID",
+      "add new operator",
+      "get user by ID",
+      "add new user",
+      "list all users",
+      "deactivate user",
+      "activate user",
+      "get cache",
+      "get_permissions"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "view",
+          "create",
+          "list",
+          "deactivate",
+          "activate"
+        ]
+      },
+      {
+        "resourceName": "operator",
+        "permissionList": [
+          "list",
+          "view",
+          "create"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "telcoAdmin",
+    "description": "Telco Admin",
+    "permissions": [
+      "create attribute",
+      "get attribute by name",
+      "get all attributes",
+      "balance notification",
+      "balance update",
+      "get cache statistics",
+      "get customer by id",
+      "create customer",
+      "delete customer",
+      "update customer",
+      "get all customers",
+      "search customers",
+      "create debit",
+      "Create Offer",
+      "Update Offer",
+      "Get Offer",
+      "Get All Offers",
+      "Delete Offer",
+      "get balance by id",
+      "recharge balance",
+      "authorize transaction",
+      "initiate transaction",
+      "cancel transaction",
+      "finalize transaction",
+      "update resource",
+      "rate usage",
+      "callback",
+      "get payments by subscribed offer ID",
+      "get payments by customer ID",
+      "create refund",
+      "Create Resource",
+      "Get Resource",
+      "Get All Resources",
+      "Delete Resource",
+      "get service by serviceCode",
+      "get all services",
+      "create service",
+      "get payments by subscriptionId",
+      "start accounting",
+      "initiate session",
+      "update session",
+      "get session by id",
+      "update accounting",
+      "terminate session",
+      "get top customer metrics",
+      "subscribe",
+      "unsubscribe",
+      "get subscription by id",
+      "set subscription validity",
+      "renew subscribed offer",
+      "load product pricing offer",
+      "get events",
+      "create UOM",
+      "get UOM by name",
+      "get all UOMs",
+      "add new user",
+      "list all users",
+      "delete user",
+      "create transaction",
+      "graphQL for customer service",
+      "graphQL for pricing service",
+      "graphQL for common module",
+      "graphQL for reservation module",
+      "graphQL for station service",
+      "graphQL for config service",
+      "get cache",
+      "TMF_createUsageConsumption",
+      "TMF_retrieveUsageConsumption",
+      "TMF_listUsageConsumption",
+      "TMF_deleteUsageConsumption",
+      "TMF_createIndividual",
+      "TMF_getIndividual",
+      "TMF_listIndividual",
+      "TMF_patchIndividual",
+      "TMF_deleteIndividual",
+      "TMF_createOrganization",
+      "TMF_getOrganization",
+      "TMF_listOrganization",
+      "TMF_patchOrganization",
+      "TMF_deleteOrganization",
+      "get_permissions"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "delete",
+          "update"
+        ]
+      },
+      {
+        "resourceName": "subscription",
+        "permissionList": [
+          "create",
+          "update",
+          "renew",
+          "view",
+          "unsubscribe"
+        ]
+      },
+      {
+        "resourceName": "uom",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "resource",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "service",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "offer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "genericAdmin",
+    "description": "generic Admin",
+    "permissions": [
+      "create attribute",
+      "get attribute by name",
+      "get all attributes",
+      "balance notification",
+      "balance update",
+      "get cache statistics",
+      "get customer by id",
+      "create customer",
+      "delete customer",
+      "update customer",
+      "get all customers",
+      "search customers",
+      "create debit",
+      "Create Offer",
+      "Update Offer",
+      "Get Offer",
+      "Get All Offers",
+      "Delete Offer",
+      "get balance by id",
+      "recharge balance",
+      "authorize transaction",
+      "initiate transaction",
+      "cancel transaction",
+      "finalize transaction",
+      "update resource",
+      "rate usage",
+      "callback",
+      "get payments by subscribed offer ID",
+      "get payments by customer ID",
+      "create refund",
+      "Create Resource",
+      "Get Resource",
+      "Get All Resources",
+      "Delete Resource",
+      "get service by serviceCode",
+      "get all services",
+      "create service",
+      "get payments by subscriptionId",
+      "start accounting",
+      "initiate session",
+      "update session",
+      "get session by id",
+      "update accounting",
+      "terminate session",
+      "get top customer metrics",
+      "topGroupMetrics",
+      "subscribe",
+      "unsubscribe",
+      "get subscription by id",
+      "set subscription validity",
+      "renew subscribed offer",
+      "load product pricing offer",
+      "get events",
+      "create UOM",
+      "get UOM by name",
+      "get all UOMs",
+      "add new user",
+      "list all users",
+      "delete user",
+      "create transaction",
+      "graphQL for customer service",
+      "graphQL for pricing service",
+      "graphQL for common module",
+      "graphQL for reservation module",
+      "graphQL for station service",
+      "graphQL for config service",
+      "get cache",
+      "TMF_createUsageConsumption",
+      "TMF_retrieveUsageConsumption",
+      "TMF_listUsageConsumption",
+      "TMF_deleteUsageConsumption",
+      "TMF_createIndividual",
+      "TMF_getIndividual",
+      "TMF_listIndividual",
+      "TMF_patchIndividual",
+      "TMF_deleteIndividual",
+      "TMF_createOrganization",
+      "TMF_getOrganization",
+      "TMF_listOrganization",
+      "TMF_patchOrganization",
+      "TMF_deleteOrganization",
+      "get_permissions"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "dashboard",
+        "permissionList": [
+          "view"
+        ]
+      },
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "delete",
+          "update"
+        ]
+      },
+      {
+        "resourceName": "subscription",
+        "permissionList": [
+          "create",
+          "update",
+          "renew",
+          "view",
+          "unsubscribe"
+        ]
+      },
+      {
+        "resourceName": "uom",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "resource",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "service",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "offer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      }
+    ]
+  }
+]

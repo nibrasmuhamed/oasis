@@ -1,0 +1,60 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.0">
+  <diagram name="Page-1" id="z5d0A2VNeS4EK3z_tUZj">
+    <mxGraphModel dx="984" dy="665" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="160" y="160" width="470" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-2" value="Square is system boundary" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="130" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zDQ8DOc2uUxxslQUTRjw-3" target="zDQ8DOc2uUxxslQUTRjw-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zDQ8DOc2uUxxslQUTRjw-3" target="zDQ8DOc2uUxxslQUTRjw-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-3" value="Login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-4" value="Oval is functionality/use case" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="230" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-5" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="350" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-8" value="place order" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="390" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-10" value="payment" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-12" value="payment is prerequesit of login" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="460" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zDQ8DOc2uUxxslQUTRjw-13" target="zDQ8DOc2uUxxslQUTRjw-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="210" />
+              <mxPoint x="320" y="270" />
+              <mxPoint x="318" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-16" value="extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zDQ8DOc2uUxxslQUTRjw-15">
+          <mxGeometry x="-0.1472" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-13" value="login via google" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="170" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zDQ8DOc2uUxxslQUTRjw-17" value="Use Case Diagram" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="78" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

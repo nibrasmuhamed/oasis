@@ -1,0 +1,1439 @@
+[
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1b2"
+    },
+    "name": "create attribute",
+    "resourceName": "attribute",
+    "description": "To create a new attribute",
+    "url": "/attribute",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1b3"
+    },
+    "name": "get attribute by name",
+    "resourceName": "attribute",
+    "description": "To get an attribute by name",
+    "url": "/getAttribute",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1b4"
+    },
+    "name": "get all attributes",
+    "resourceName": "attribute",
+    "description": "To get a list of all attributes",
+    "url": "/getAllAttributes",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1b5"
+    },
+    "name": "balance notification",
+    "resourceName": "balance",
+    "description": "To send notification about balance",
+    "url": "/balance/notification",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1b6"
+    },
+    "name": "balance update",
+    "resourceName": "balance",
+    "description": "To update balance",
+    "url": "/balance/update",
+    "action": "update",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1b7"
+    },
+    "name": "get cache statistics",
+    "resourceName": "cacheMetrics",
+    "description": "To get cache statistics",
+    "url": "/cacheMetrics",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1b8"
+    },
+    "name": "get customer by id",
+    "resourceName": "customer",
+    "description": "To get a customer by customer id",
+    "url": "/customer",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1b9"
+    },
+    "name": "create customer",
+    "resourceName": "customer",
+    "description": "To create a new customer",
+    "url": "/registerCustomer",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1ba"
+    },
+    "name": "delete customer",
+    "resourceName": "customer",
+    "description": "To delete an existing customer",
+    "url": "/deleteCustomer",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1bb"
+    },
+    "name": "update customer",
+    "resourceName": "customer",
+    "description": "To update an existing customer",
+    "url": "/updateCustomer",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1bc"
+    },
+    "name": "get all customers",
+    "resourceName": "customer",
+    "description": "To get a list of all customers",
+    "url": "/getAllCustomers",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1bd"
+    },
+    "name": "search customers",
+    "resourceName": "customer",
+    "description": "To search for customers based on certain criteria",
+    "url": "/customers",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1be"
+    },
+    "name": "create debit",
+    "resourceName": "debit",
+    "description": "To create a new debit",
+    "url": "/debit",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1bf"
+    },
+    "name": "get ocpp reservation",
+    "resourceName": "ocpp2.0",
+    "description": "To get an OCPP reservation",
+    "url": "/v1.6",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c0"
+    },
+    "name": "create ocpp reservation",
+    "resourceName": "ocpp2.0",
+    "description": "To create a new OCPP reservation",
+    "url": "/v1.6",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c1"
+    },
+    "name": "update ocpp reservation",
+    "resourceName": "ocpp2.0",
+    "description": "To update an existing OCPP reservation",
+    "url": "/v1.6",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c2"
+    },
+    "name": "delete ocpp reservation",
+    "resourceName": "ocpp2.0",
+    "description": "To delete an OCPP reservation",
+    "url": "/v1.6",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c3"
+    },
+    "name": "Create Offer",
+    "resourceName": "offers",
+    "description": "Endpoint to create a new offer",
+    "url": "/offer",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c4"
+    },
+    "name": "Update Offer",
+    "resourceName": "offers",
+    "description": "Endpoint to update an existing offer",
+    "url": "/editOffer",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c5"
+    },
+    "name": "Get Offer",
+    "resourceName": "offers",
+    "description": "Endpoint to retrieve an offer by offer code",
+    "url": "/getOffer",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c6"
+    },
+    "name": "Get All Offers",
+    "resourceName": "offers",
+    "description": "Endpoint to retrieve all offers",
+    "url": "/getAllOffers",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c7"
+    },
+    "name": "Delete Offer",
+    "resourceName": "offers",
+    "description": "Endpoint to delete an offer by offer code",
+    "url": "/deleteOffer",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c8"
+    },
+    "name": "add new operator",
+    "resourceName": "operator",
+    "description": "To add a new operator to the system",
+    "url": "/operator",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1c9"
+    },
+    "name": "get operator by ID",
+    "resourceName": "operator",
+    "description": "To get operator data by operator ID",
+    "url": "/getOperator",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1ca"
+    },
+    "name": "get all operators",
+    "resourceName": "operator",
+    "description": "To get a list of all operators in the system",
+    "url": "/getAllOperators",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1cb"
+    },
+    "name": "get balance by id",
+    "resourceName": "others",
+    "description": "To get a balance by balance id",
+    "url": "/balance",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1cc"
+    },
+    "name": "recharge balance",
+    "resourceName": "others",
+    "description": "To recharge a balance",
+    "url": "/recharge",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1cd"
+    },
+    "name": "authorize transaction",
+    "resourceName": "others",
+    "description": "To authorize a transaction",
+    "url": "/authorize",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1ce"
+    },
+    "name": "initiate transaction",
+    "resourceName": "others",
+    "description": "To initiate a transaction",
+    "url": "/initiate",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1cf"
+    },
+    "name": "cancel transaction",
+    "resourceName": "others",
+    "description": "To cancel a transaction",
+    "url": "/cancel",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1d0"
+    },
+    "name": "finalize transaction",
+    "resourceName": "others",
+    "description": "To finalize a transaction",
+    "url": "/finalize",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1d1"
+    },
+    "name": "update resource",
+    "resourceName": "others",
+    "description": "To update a resource",
+    "url": "/update",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1d2"
+    },
+    "name": "rate usage",
+    "resourceName": "others",
+    "description": "To rate the usage",
+    "url": "/rateUsage",
+    "action": "update",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1d3"
+    },
+    "name": "callback",
+    "resourceName": "others",
+    "description": "To handle a callback",
+    "url": "/callback",
+    "action": "update",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1d4"
+    },
+    "name": "get payments by subscribed offer ID",
+    "resourceName": "payment",
+    "description": "To get payments by subscribed offer ID",
+    "url": "/getPayments/subscribedOfferId",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1d6"
+    },
+    "name": "create refund",
+    "resourceName": "refund",
+    "description": "To create a new refund",
+    "url": "/refund",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1d7"
+    },
+    "name": "create reservation",
+    "resourceName": "reservation",
+    "description": "To create a new reservation",
+    "url": "/reserve",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1d8"
+    },
+    "name": "get all reservations",
+    "resourceName": "reservation",
+    "description": "To get all reservations",
+    "url": "/getAllReservations",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1d9"
+    },
+    "name": "get reservation by id",
+    "resourceName": "reservation",
+    "description": "To get a reservation by reservation id",
+    "url": "/getReservation",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1da"
+    },
+    "name": "delete reservation",
+    "resourceName": "reservation",
+    "description": "To delete a reservation",
+    "url": "/deleteReservation",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1db"
+    },
+    "name": "update reservation",
+    "resourceName": "reservation",
+    "description": "To update a reservation",
+    "url": "/updateReservation",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1dc"
+    },
+    "name": "cancel reservation",
+    "resourceName": "reservation",
+    "description": "To cancel a reservation",
+    "url": "/cancelReservation",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1dd"
+    },
+    "name": "start reservation",
+    "resourceName": "reservation",
+    "description": "To start a reservation",
+    "url": "/startReservation",
+    "action": "update",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1de"
+    },
+    "name": "end reservation",
+    "resourceName": "reservation",
+    "description": "To end a reservation",
+    "url": "/stopReservation",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1df"
+    },
+    "name": "Create Resource",
+    "resourceName": "resource",
+    "description": "Create a new resource",
+    "url": "/resource",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e0"
+    },
+    "name": "Get Resource",
+    "resourceName": "resource",
+    "description": "Get a specific resource",
+    "url": "/getResource",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e1"
+    },
+    "name": "Get All Resources",
+    "resourceName": "resource",
+    "description": "Get all resources",
+    "url": "/getAllResources",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e2"
+    },
+    "name": "Delete Resource",
+    "resourceName": "resource",
+    "description": "Delete a specific resource",
+    "url": "/deleteResource",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e3"
+    },
+    "name": "get service by serviceCode",
+    "resourceName": "service",
+    "description": "To get a service by service code",
+    "url": "/getService",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e4"
+    },
+    "name": "get all services",
+    "resourceName": "service",
+    "description": "To get a list of all services",
+    "url": "/getAllServices",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e5"
+    },
+    "name": "create service",
+    "resourceName": "service",
+    "description": "To create a new service",
+    "url": "/service",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e6"
+    },
+    "name": "get payments by subscriptionId",
+    "resourceName": "service",
+    "description": "To get payments by subscription id",
+    "url": "/getPayments/subscriptionId",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e7"
+    },
+    "name": "start accounting",
+    "resourceName": "session",
+    "description": "To start accounting for a session",
+    "url": "/session/startAccounting",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e8"
+    },
+    "name": "initiate session",
+    "resourceName": "session",
+    "description": "To initiate a new session",
+    "url": "/session/initiate",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1e9"
+    },
+    "name": "update session",
+    "resourceName": "session",
+    "description": "To update an existing session",
+    "url": "/session/update",
+    "action": "update",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1ea"
+    },
+    "name": "get session by id",
+    "resourceName": "session",
+    "description": "To get a session by session id",
+    "url": "/session/getSession",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1eb"
+    },
+    "name": "update accounting",
+    "resourceName": "session",
+    "description": "To update accounting for a session",
+    "url": "/session/updateAccounting",
+    "action": "update",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1ec"
+    },
+    "name": "terminate session",
+    "resourceName": "session",
+    "description": "To terminate a session",
+    "url": "/session/terminate",
+    "action": "delete",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1ed"
+    },
+    "name": "get station metrics",
+    "resourceName": "stations",
+    "description": "To get station metrics data",
+    "url": "/stations/metrics/data",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1ee"
+    },
+    "name": "get top customer metrics",
+    "resourceName": "stations",
+    "description": "To get top customer metrics for a station",
+    "url": "/stations/metrics/customer",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1ef"
+    },
+    "name": "create station",
+    "resourceName": "stations",
+    "description": "To create a new station",
+    "url": "/stations",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f0"
+    },
+    "name": "delete station",
+    "resourceName": "stations",
+    "description": "To delete an existing station",
+    "url": "/stations",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f1"
+    },
+    "name": "update station",
+    "resourceName": "stations",
+    "description": "To update an existing station",
+    "url": "/stations",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f2"
+    },
+    "name": "get all stations",
+    "resourceName": "stations",
+    "description": "To get a list of all stations",
+    "url": "/stations",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f3"
+    },
+    "name": "subscribe",
+    "resourceName": "subscription",
+    "description": "To subscribe to a new service",
+    "url": "/subscribe",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f4"
+    },
+    "name": "unsubscribe",
+    "resourceName": "subscription",
+    "description": "To unsubscribe from a service",
+    "url": "/unsubscribe",
+    "action": "delete",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f5"
+    },
+    "name": "get subscription by id",
+    "resourceName": "subscription",
+    "description": "To get a subscription by subscription id",
+    "url": "/getSubscription",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f6"
+    },
+    "name": "set subscription validity",
+    "resourceName": "subscription",
+    "description": "To set the validity of a subscription",
+    "url": "/setValidity",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f7"
+    },
+    "name": "renew subscribed offer",
+    "resourceName": "subscription",
+    "description": "To renew a subscribed offer for a subscription",
+    "url": "/renewSubscriptionOffer",
+    "action": "update",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f8"
+    },
+    "name": "load product pricing offer",
+    "resourceName": "subscription",
+    "description": "To load product pricing offer for a subscription",
+    "url": "/loadProductPricing",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1f9"
+    },
+    "name": "get events",
+    "resourceName": "subscription",
+    "description": "To get a events by subscription id",
+    "url": "/events",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1fa"
+    },
+    "name": "create UOM",
+    "resourceName": "UOM",
+    "description": "To create a new unit of measurement",
+    "url": "/unitOfMeasurement",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1fb"
+    },
+    "name": "get UOM by name",
+    "resourceName": "UOM",
+    "description": "To get a unit of measurement by name",
+    "url": "/getUnitOfMeasurement",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1fc"
+    },
+    "name": "get all UOMs",
+    "resourceName": "UOM",
+    "description": "To get a list of all unit of measurements",
+    "url": "/getAllUnitOfMeasurements",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1fd"
+    },
+    "name": "add new user",
+    "resourceName": "user",
+    "description": "To add a new user to the system",
+    "url": "/user",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1fe"
+    },
+    "name": "list all users",
+    "resourceName": "user",
+    "description": "To list all users in the system",
+    "url": "/user",
+    "action": "list",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb1ff"
+    },
+    "name": "delete user",
+    "resourceName": "user",
+    "description": "To delete a user from the system",
+    "url": "/deleteUser",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb200"
+    },
+    "name": "deactivate user",
+    "resourceName": "user",
+    "description": "To deactivate a user in the system",
+    "url": "/user/deactivate",
+    "action": "deactivate",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb201"
+    },
+    "name": "activate user",
+    "resourceName": "user",
+    "description": "To activate a user in the system",
+    "url": "/user/activate",
+    "action": "activate",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb202"
+    },
+    "name": "set variables request",
+    "resourceName": "variables",
+    "description": "To set variables for a specific station",
+    "url": "/v2.0.1/stations/variables",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb203"
+    },
+    "name": "get variables request",
+    "resourceName": "variables",
+    "description": "To get variables for a specific station",
+    "url": "/v2.0.1/stations/variables/search",
+    "action": "get",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb204"
+    },
+    "name": "reset request",
+    "resourceName": "reset",
+    "description": "To reset a specific station",
+    "url": "/v2.0.1/stations/reset",
+    "action": "delete",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb205"
+    },
+    "name": "get base report",
+    "resourceName": "base report",
+    "description": "To get base report for a specific station",
+    "url": "/v2.0.1/stations/base-report/search",
+    "action": "get",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb206"
+    },
+    "name": "send change availability request",
+    "resourceName": "change availability",
+    "description": "To send change availability request for a specific station",
+    "url": "/v2.0.1/stations/change-availability",
+    "action": "update",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb207"
+    },
+    "name": "send boot notification request",
+    "resourceName": "boot notification",
+    "description": "To send boot notification request for a specific station",
+    "url": "/v2.0.1/stations/boot-notification",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb208"
+    },
+    "name": "send status notification request",
+    "resourceName": "status notification",
+    "description": "To send status notification request for a specific station",
+    "url": "/v2.0.1/stations/status-notification",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb209"
+    },
+    "name": "send heartbeat request",
+    "resourceName": "heartbeat",
+    "description": "To send heartbeat request for a specific station",
+    "url": "/v2.0.1/stations/heartbeat",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb20a"
+    },
+    "name": "send data transfer request to CSMS",
+    "resourceName": "data transfer to CSMS",
+    "description": "To send data transfer request to CSMS for a specific station",
+    "url": "/v2.0.1/stations/data-transfer-to-csms",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb20b"
+    },
+    "name": "create data transfer request to station",
+    "resourceName": "data-transfer",
+    "description": "To create a new data transfer request to station",
+    "url": "/v2.0.1/stations/data-transfer-to-station",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb20c"
+    },
+    "name": "send notify report request",
+    "resourceName": "notify-report",
+    "description": "To send a new notify report request",
+    "url": "/v2.0.1/stations/notify-report",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb20d"
+    },
+    "name": "create transaction",
+    "resourceName": "transaction",
+    "description": "To create a new transaction",
+    "url": "/v2.0.1/stations/transaction",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb20e"
+    },
+    "name": "authorization handler",
+    "resourceName": "authorization",
+    "description": "To handle authorization requests",
+    "url": "/v2.0.1/stations/authorize",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb20f"
+    },
+    "name": "notify event handler",
+    "resourceName": "notify-event",
+    "description": "To handle notify event requests",
+    "url": "/v2.0.1/stations/notify-event",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb210"
+    },
+    "name": "create station reservation handler",
+    "resourceName": "reservation",
+    "description": "To create a new station reservation",
+    "url": "/v2.0.1/stations/reservation",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb211"
+    },
+    "name": "update reservation status handler",
+    "resourceName": "reservation",
+    "description": "To update reservation status",
+    "url": "/v2.0.1/stations/reservation",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb212"
+    },
+    "name": "cancel station reservation handler",
+    "resourceName": "reservation",
+    "description": "To cancel a station reservation",
+    "url": "/v2.0.1/stations/reservation",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb213"
+    },
+    "name": "boot notification",
+    "resourceName": "ocpp1",
+    "description": "To send a boot notification request to the station",
+    "url": "/v1.6/stations/boot-notification",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb214"
+    },
+    "name": "status notification",
+    "resourceName": "ocpp1",
+    "description": "To send a status notification request to the station",
+    "url": "/v1.6/stations/status-notification",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb215"
+    },
+    "name": "heartbeat",
+    "resourceName": "ocpp1",
+    "description": "To send a heartbeat request to the station",
+    "url": "/v1.6/stations/heartbeat",
+    "action": "get",
+    "method": "GET"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb216"
+    },
+    "name": "data transfer to csms",
+    "resourceName": "ocpp1",
+    "description": "To send a data transfer request from the station to CSMS",
+    "url": "/v1.6/stations/data-transfer-to-csms",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb217"
+    },
+    "name": "data transfer to station",
+    "resourceName": "ocpp1",
+    "description": "To send a data transfer request from CSMS to the station",
+    "url": "/v1.6/stations/data-transfer-to-station",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb218"
+    },
+    "name": "change availability",
+    "resourceName": "ocpp1",
+    "description": "To send a change availability request to the station",
+    "url": "/v1.6/stations/change-availability",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb219"
+    },
+    "name": "reserve now",
+    "resourceName": "ocpp1",
+    "description": "To send a reserve now request to the station",
+    "url": "/v1.6/stations/reservation",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb21a"
+    },
+    "name": "cancel reservation",
+    "resourceName": "ocpp1",
+    "description": "To send a cancel reservation request to the station",
+    "url": "/v1.6/stations/reservation",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {
+    "_id": {
+      "$oid": "6452142ab4edf31f2f8fb21b"
+    },
+    "name": "query",
+    "resourceName": "offers",
+    "description": "To query offers",
+    "url": "/query",
+    "action": "get",
+    "method": "POST"
+  },
+  {
+    "_id": {
+      "$oid": "64521f56b4edf31f2f8fb223"
+    },
+    "name": "get payments by customer ID",
+    "resourceName": "payment",
+    "description": "To get payments by customer ID",
+    "url": "/getPayments/customerId",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "name": "graphQL for customer service",
+    "resourceName": "customer",
+    "description": "To use graphQL for customer operations",
+    "url": "/customer/query",
+    "action": "read",
+    "method": "POST"
+  },
+  {
+    "name": "graphQL for pricing service",
+    "resourceName": "pricing",
+    "description": "To use graphQL for pricing operations",
+    "url": "/pricing/query",
+    "action": "read",
+    "method": "POST"
+  },
+  {
+    "name": "graphQL for common module",
+    "resourceName": "common",
+    "description": "To use graphQL for common operations",
+    "url": "/common/query",
+    "action": "read",
+    "method": "POST"
+  },
+  {
+    "name": "graphQL for reservation module",
+    "resourceName": "common",
+    "description": "To use graphQL for reservation operations",
+    "url": "/reservation/query",
+    "action": "read",
+    "method": "POST"
+  },
+  {
+    "name": "graphQL for station service",
+    "resourceName": "station",
+    "description": "To use graphQL for station related operations",
+    "url": "/stations-query",
+    "action": "read",
+    "method": "POST"
+  },
+  {
+    "name": "graphQL for config service",
+    "resourceName": "configurations",
+    "description": "To use graphQL for config related operations",
+    "url": "/config/query",
+    "action": "read",
+    "method": "POST"
+  },
+  {
+    "name": "stations_remoteStartTransaction",
+    "resourceName": "stations",
+    "description": "To start transaction remote",
+    "url": "/v1.6/stations/remote-transaction/start",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "stations_remoteStopTransaction",
+    "resourceName": "stations",
+    "description": "To stop transaction remote",
+    "url": "/v1.6/stations/remote-transaction/stop",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "stations_remoteStartTransactionV2P1",
+    "resourceName": "stations",
+    "description": "To start transaction remote",
+    "url": "/v2.0.1/stations/remote-transaction/start",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "stations_remoteStopTransactionV2P1",
+    "resourceName": "stations",
+    "description": "To stop transaction remote",
+    "url": "/v2.0.1/stations/remote-transaction/stop",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "stations_resetV1p6",
+    "resourceName": "stations",
+    "description": "To reset a charging station",
+    "url": "/v1.6/stations/reset",
+    "action": "delete",
+    "method": "POST"
+  },
+  {
+    "name": "get cache",
+    "resourceName": "cache",
+    "description": "Search on cache",
+    "url": "/cache",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "name": "stations_sendLocalistV1p6",
+    "resourceName": "stations",
+    "description": "To send local list for station",
+    "url": "/v1.6/stations/send-local-list",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "TMF_createUsageConsumption",
+    "resourceName": "TMF",
+    "description": "To create an usage usageConsumption record",
+    "url": "/tmf-api/usageConsumption/v4/queryUsageConsumption",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "TMF_createIndividual",
+    "resourceName": "TMF",
+    "description": "To create an individual record",
+    "url": "/tmf-api/party/v4/individual",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "TMF_createOrganization",
+    "resourceName": "TMF",
+    "description": "To create an organization record",
+    "url": "/tmf-api/party/v4/organization",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "TMF_retrieveUsageConsumption",
+    "resourceName": "TMF",
+    "description": "To retrieve an usage usageConsumption record",
+    "url": "/tmf-api/usageConsumption/v4/queryUsageConsumption/",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "name": "TMF_getIndividual",
+    "resourceName": "TMF",
+    "description": "To retrieve an individual record",
+    "url": "/tmf-api/party/v4/individual",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "name": "TMF_getOrganization",
+    "resourceName": "TMF",
+    "description": "To retrieve an organization record",
+    "url": "/tmf-api/party/v4/organization",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "name": "TMF_listUsageConsumption",
+    "resourceName": "TMF",
+    "description": "To list usage usageConsumption records",
+    "url": "/tmf-api/usageConsumption/v4/queryUsageConsumption",
+    "action": "read",
+    "method": "GET"
+  },
+  {  
+    "name": "TMF_listIndividual",
+    "resourceName": "TMF",
+    "description": "To list individual records",
+    "url": "/tmf-api/party/v4/individual",
+    "action": "read",
+    "method": "GET"
+  },
+  {  
+    "name": "TMF_listOrganization",
+    "resourceName": "TMF",
+    "description": "To list organization records",
+    "url": "/tmf-api/party/v4/organization",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "name": "TMF_deleteUsageConsumption",
+    "resourceName": "TMF",
+    "description": "To delete usage usageConsumption record",
+    "url": "/tmf-api/usageConsumption/v4/queryUsageConsumption",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {  
+    "name": "TMF_deleteIndividual",
+    "resourceName": "TMF",
+    "description": "To list individual records",
+    "url": "/tmf-api/party/v4/individual",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {  
+    "name": "TMF_deleteOrganization",
+    "resourceName": "TMF",
+    "description": "To list organization records",
+    "url": "/tmf-api/party/v4/organization",
+    "action": "delete",
+    "method": "DELETE"
+  },
+  {  
+    "name": "TMF_patchIndividual",
+    "resourceName": "TMF",
+    "description": "To patch individual record",
+    "url": "/tmf-api/party/v4/individual",
+    "action": "update",
+    "method": "PATCH"
+  },
+  {  
+    "name": "TMF_patchOrganization",
+    "resourceName": "TMF",
+    "description": "To patch organization record",
+    "url": "/tmf-api/party/v4/organization",
+    "action": "update",
+    "method": "PATCH"
+  },
+  {
+    "name": "topGroupMetrics",
+    "resourceName": "top-group-metrics",
+    "description": "to get group team metrics",
+    "url": "/metrics/top-group",
+    "action": "read",
+    "method": "GET"},
+  {
+    "name": "stations_unlockConnectorV1p6",
+    "resourceName": "stations",
+    "description": "Unlock Connector for station",
+    "url": "/v1.6/stations/unlock-connector",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "get_permissions",
+    "resourceName": "permissions",
+    "description": "To get permissions",
+    "url": "/permissions",
+    "action": "read",
+    "method": "GET"
+  },
+  {
+    "name": "stations_updateFirmwareV1p6",
+    "resourceName": "stations",
+    "description": "Update Firmware for station",
+    "url": "/v1.6/stations/update-firmware",
+    "action": "update",
+    "method": "PUT"
+  },
+  {
+    "name": "stations_getDiagnosticsV1p6",
+    "resourceName": "stations",
+    "description": "Get Diagnostics from station",
+    "url": "/v1.6/stations/get-diagnostics",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "stations_getConfigurationV1p6",
+    "resourceName": "stations",
+    "description": "Get Configurations from station",
+    "url": "/v1.6/stations/get-configuration",
+    "action": "create",
+    "method": "POST"
+  },
+  {
+    "name": "topGroupMetrics",
+    "resourceName": "top-group-metrics",
+    "description": "to get group team metrics",
+    "url": "/metrics/top-group",
+    "action": "read",
+    "method": "GET"
+  }
+]

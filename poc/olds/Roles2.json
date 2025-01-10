@@ -1,0 +1,622 @@
+[
+  {
+    "name": "operatorAdmin",
+    "description": "operator admin",
+    "permissions": [
+      "/metrics/top-group,GET",
+      "/v1.6/stations/get-configuration,POST",
+      "/v1.6/stations/get-diagnostics,POST",
+      "/v1.6/stations/update-firmware,PUT",
+      "/v1.6/stations/unlock-connector,POST",
+      "/v1.6/stations/send-local-list,POST",
+      "/v1.6/stations/reset,POST",
+      "/v2.0.1/stations/remote-transaction/start,POST",
+      "/v2.0.1/stations/remote-transaction/stop,POST",
+      "/v1.6/stations/remote-transaction/start,POST",
+      "/v1.6/stations/remote-transaction/stop,POST",
+      "/attribute,POST",
+      "/getAttribute,GET",
+      "/getAllAttributes,GET",
+      "/balance/notification,POST",
+      "/balance/update,POST",
+      "/cacheMetrics,GET",
+      "/customer,GET",
+      "/registerCustomer,POST",
+      "/deleteCustomer,DELETE",
+      "/updateCustomer,PUT",
+      "/getAllCustomers,GET",
+      "/customers,GET",
+      "/debit,POST",
+      "/v1.6,GET",
+      "/v1.6,POST",
+      "/v1.6,PUT",
+      "/v1.6,DELETE",
+      "/offer,POST",
+      "/editOffer,PUT",
+      "/getOffer,GET",
+      "/getAllOffers,GET",
+      "/deleteOffer,DELETE",
+      "/balance,GET",
+      "/recharge,POST",
+      "/authorize,POST",
+      "/initiate,POST",
+      "/cancel,PUT",
+      "/finalize,PUT",
+      "/update,PUT",
+      "/rateUsage,POST",
+      "/callback,POST",
+      "/getPayments/subscribedOfferId,GET",
+      "/getPayments/customerId,GET",
+      "/refund,POST",
+      "/reserve,POST",
+      "/getAllReservations,GET",
+      "/getReservation,GET",
+      "/deleteReservation,DELETE",
+      "/updateReservation,PUT",
+      "/v1.6/stations/reservation,DELETE",
+      "/startReservation,POST",
+      "/stopReservation,PUT",
+      "/resource,POST",
+      "/getResource,GET",
+      "/getAllResources,GET",
+      "/deleteResource,DELETE",
+      "/getService,GET",
+      "/getAllServices,GET",
+      "/service,POST",
+      "/getPayments/subscriptionId,GET",
+      "/session/startAccounting,POST",
+      "/session/initiate,POST",
+      "/session/update,POST",
+      "/session/getSession,GET",
+      "/session/updateAccounting,POST",
+      "/session/terminate,POST",
+      "/stations/metrics/data,GET",
+      "/stations/metrics/customer,GET",
+      "/stations,POST",
+      "/stations,DELETE",
+      "/stations,PUT",
+      "/stations,GET",
+      "/subscribe,POST",
+      "/unsubscribe,POST",
+      "/getSubscription,GET",
+      "/setValidity,PUT",
+      "/renewSubscriptionOffer,POST",
+      "/loadProductPricing,PUT",
+      "/events,GET",
+      "/unitOfMeasurement,POST",
+      "/getUnitOfMeasurement,GET",
+      "/getAllUnitOfMeasurements,GET",
+      "/user,POST",
+      "/user,GET",
+      "/deleteUser,DELETE",
+      "/v2.0.1/stations/variables,POST",
+      "/v2.0.1/stations/variables/search,POST",
+      "/v2.0.1/stations/reset,POST",
+      "/v2.0.1/stations/base-report/search,POST",
+      "/v2.0.1/stations/change-availability,POST",
+      "/v2.0.1/stations/boot-notification,POST",
+      "/v2.0.1/stations/status-notification,POST",
+      "/v2.0.1/stations/heartbeat,GET",
+      "/v2.0.1/stations/data-transfer-to-csms,POST",
+      "/v2.0.1/stations/data-transfer-to-station,POST",
+      "/v2.0.1/stations/notify-report,POST",
+      "/v2.0.1/stations/transaction,POST",
+      "/v2.0.1/stations/authorize,POST",
+      "/v2.0.1/stations/notify-event,POST",
+      "/v2.0.1/stations/reservation,POST",
+      "/v2.0.1/stations/reservation,PUT",
+      "/v2.0.1/stations/reservation,DELETE",
+      "/v1.6/stations/boot-notification,POST",
+      "/v1.6/stations/status-notification,POST",
+      "/v1.6/stations/heartbeat,GET",
+      "/v1.6/stations/data-transfer-to-csms,POST",
+      "/v1.6/stations/data-transfer-to-station,POST",
+      "/v1.6/stations/change-availability,POST",
+      "/v1.6/stations/reservation,POST",
+      "/v1.6/stations/reservation,DELETE",
+      "/customer/query,POST",
+      "/pricing/query,POST",
+      "/common/query,POST",
+      "/reservation/query,POST",
+      "/stations-query,POST",
+      "/config/query,POST",
+      "/cache,GET",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,POST",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,GET",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,GET",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,DELETE",
+      "/tmf-api/party/v4/individual,POST",
+      "/tmf-api/party/v4/individual,GET",
+      "/tmf-api/party/v4/individual,GET",
+      "/tmf-api/party/v4/individual,PATCH",
+      "/tmf-api/party/v4/individual,DELETE",
+      "/tmf-api/party/v4/organization,POST",
+      "/tmf-api/party/v4/organization,GET",
+      "/tmf-api/party/v4/organization,GET",
+      "/tmf-api/party/v4/organization,PATCH",
+      "/tmf-api/party/v4/organization,DELETE",
+      "/permissions,GET"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "dashboard",
+        "permissionList": [
+          "view"
+        ]
+      },
+      {
+        "resourceName": "station",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "reservation",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "delete",
+          "update"
+        ]
+      },
+      {
+        "resourceName": "subscription",
+        "permissionList": [
+          "create",
+          "update",
+          "renew",
+          "view",
+          "unsubscribe"
+        ]
+      },
+      {
+        "resourceName": "uom",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "resource",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "service",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "offer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "operatorUser",
+    "description": "operatorUser",
+    "permissions": [
+      "/customer,GET",
+      "/registerCustomer,POST",
+      "/deleteCustomer,DELETE",
+      "/updateCustomer,PUT",
+      "/getAllCustomers,GET",
+      "/customers,GET",
+      "/subscribe,POST",
+      "/unsubscribe,POST",
+      "/getSubscription,GET",
+      "/setValidity,PUT",
+      "/renewSubscriptionOffer,POST",
+      "/getOffer,GET",
+      "/getAllOffers,GET",
+      "/stations,GET",
+      "/permissions,GET"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "offer",
+        "permissionList": [
+          "list",
+          "view"
+        ]
+      },
+      {
+        "resourceName": "subscription",
+        "permissionList": [
+          "subscribe",
+          "unsubscribe"
+        ]
+      },
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "station",
+        "permissionList": [
+          "list",
+          "view"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "systemUser",
+    "description": "system",
+    "permissions": [
+      "/getAllOperators,GET",
+      "/getOperator,GET",
+      "/operator,POST",
+      "/user,POST",
+      "/user,GET",
+      "/user/deactivate,POST",
+      "/user/activate,POST",
+      "/cache,GET",
+      "/permissions,GET"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "view",
+          "create",
+          "list",
+          "deactivate",
+          "activate"
+        ]
+      },
+      {
+        "resourceName": "operator",
+        "permissionList": [
+          "list",
+          "view",
+          "create"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "telcoAdmin",
+    "description": "Telco Admin",
+    "permissions": [
+      "/attribute,POST",
+      "/getAttribute,GET",
+      "/getAllAttributes,GET",
+      "/balance/notification,POST",
+      "/balance/update,POST",
+      "/cacheMetrics,GET",
+      "/customer,GET",
+      "/registerCustomer,POST",
+      "/deleteCustomer,DELETE",
+      "/updateCustomer,PUT",
+      "/getAllCustomers,GET",
+      "/customers,GET",
+      "/debit,POST",
+      "/offer,POST",
+      "/editOffer,PUT",
+      "/getOffer,GET",
+      "/getAllOffers,GET",
+      "/deleteOffer,DELETE",
+      "/balance,GET",
+      "/recharge,POST",
+      "/authorize,POST",
+      "/initiate,POST",
+      "/cancel,PUT",
+      "/finalize,PUT",
+      "/update,PUT",
+      "/rateUsage,POST",
+      "/callback,POST",
+      "/getPayments/subscribedOfferId,GET",
+      "/getPayments/customerId,GET",
+      "/refund,POST",
+      "/resource,POST",
+      "/getResource,GET",
+      "/getAllResources,GET",
+      "/deleteResource,DELETE",
+      "/getService,GET",
+      "/getAllServices,GET",
+      "/service,POST",
+      "/getPayments/subscriptionId,GET",
+      "/session/startAccounting,POST",
+      "/session/initiate,POST",
+      "/session/update,POST",
+      "/session/getSession,GET",
+      "/session/updateAccounting,POST",
+      "/session/terminate,POST",
+      "/stations/metrics/customer,GET",
+      "/subscribe,POST",
+      "/unsubscribe,POST",
+      "/getSubscription,GET",
+      "/setValidity,PUT",
+      "/renewSubscriptionOffer,POST",
+      "/loadProductPricing,PUT",
+      "/events,GET",
+      "/unitOfMeasurement,POST",
+      "/getUnitOfMeasurement,GET",
+      "/getAllUnitOfMeasurements,GET",
+      "/user,POST",
+      "/user,GET",
+      "/deleteUser,DELETE",
+      "/v2.0.1/stations/transaction,POST",
+      "/customer/query,POST",
+      "/pricing/query,POST",
+      "/common/query,POST",
+      "/reservation/query,POST",
+      "/stations-query,POST",
+      "/config/query,POST",
+      "/cache,GET",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,POST",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,GET",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,GET",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,DELETE",
+      "/tmf-api/party/v4/individual,POST",
+      "/tmf-api/party/v4/individual,GET",
+      "/tmf-api/party/v4/individual,GET",
+      "/tmf-api/party/v4/individual,PATCH",
+      "/tmf-api/party/v4/individual,DELETE",
+      "/tmf-api/party/v4/organization,POST",
+      "/tmf-api/party/v4/organization,GET",
+      "/tmf-api/party/v4/organization,GET",
+      "/tmf-api/party/v4/organization,PATCH",
+      "/tmf-api/party/v4/organization,DELETE",
+      "/permissions,GET"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "delete",
+          "update"
+        ]
+      },
+      {
+        "resourceName": "subscription",
+        "permissionList": [
+          "create",
+          "update",
+          "renew",
+          "view",
+          "unsubscribe"
+        ]
+      },
+      {
+        "resourceName": "uom",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "resource",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "service",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "offer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "genericAdmin",
+    "description": "generic Admin",
+    "permissions": [
+      "/attribute,POST",
+      "/getAttribute,GET",
+      "/getAllAttributes,GET",
+      "/balance/notification,POST",
+      "/balance/update,POST",
+      "/cacheMetrics,GET",
+      "/customer,GET",
+      "/registerCustomer,POST",
+      "/deleteCustomer,DELETE",
+      "/updateCustomer,PUT",
+      "/getAllCustomers,GET",
+      "/customers,GET",
+      "/debit,POST",
+      "/offer,POST",
+      "/editOffer,PUT",
+      "/getOffer,GET",
+      "/getAllOffers,GET",
+      "/deleteOffer,DELETE",
+      "/balance,GET",
+      "/recharge,POST",
+      "/authorize,POST",
+      "/initiate,POST",
+      "/cancel,PUT",
+      "/finalize,PUT",
+      "/update,PUT",
+      "/rateUsage,POST",
+      "/callback,POST",
+      "/getPayments/subscribedOfferId,GET",
+      "/getPayments/customerId,GET",
+      "/refund,POST",
+      "/resource,POST",
+      "/getResource,GET",
+      "/getAllResources,GET",
+      "/deleteResource,DELETE",
+      "/getService,GET",
+      "/getAllServices,GET",
+      "/service,POST",
+      "/getPayments/subscriptionId,GET",
+      "/session/startAccounting,POST",
+      "/session/initiate,POST",
+      "/session/update,POST",
+      "/session/getSession,GET",
+      "/session/updateAccounting,POST",
+      "/session/terminate,POST",
+      "/stations/metrics/customer,GET",
+      "/metrics/top-group,GET",
+      "/subscribe,POST",
+      "/unsubscribe,POST",
+      "/getSubscription,GET",
+      "/setValidity,PUT",
+      "/renewSubscriptionOffer,POST",
+      "/loadProductPricing,PUT",
+      "/events,GET",
+      "/unitOfMeasurement,POST",
+      "/getUnitOfMeasurement,GET",
+      "/getAllUnitOfMeasurements,GET",
+      "/user,POST",
+      "/user,GET",
+      "/deleteUser,DELETE",
+      "/v2.0.1/stations/transaction,POST",
+      "/customer/query,POST",
+      "/pricing/query,POST",
+      "/common/query,POST",
+      "/reservation/query,POST",
+      "/stations-query,POST",
+      "/config/query,POST",
+      "/cache,GET",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,POST",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,GET",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,GET",
+      "/tmf-api/usageConsumption/v4/queryUsageConsumption,DELETE",
+      "/tmf-api/party/v4/individual,POST",
+      "/tmf-api/party/v4/individual,GET",
+      "/tmf-api/party/v4/individual,GET",
+      "/tmf-api/party/v4/individual,PATCH",
+      "/tmf-api/party/v4/individual,DELETE",
+      "/tmf-api/party/v4/organization,POST",
+      "/tmf-api/party/v4/organization,GET",
+      "/tmf-api/party/v4/organization,GET",
+      "/tmf-api/party/v4/organization,PATCH",
+      "/tmf-api/party/v4/organization,DELETE",
+      "/permissions,GET"
+    ],
+    "resourcesMap": [
+      {
+        "resourceName": "dashboard",
+        "permissionList": [
+          "view"
+        ]
+      },
+      {
+        "resourceName": "customer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "delete",
+          "update"
+        ]
+      },
+      {
+        "resourceName": "subscription",
+        "permissionList": [
+          "create",
+          "update",
+          "renew",
+          "view",
+          "unsubscribe"
+        ]
+      },
+      {
+        "resourceName": "uom",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "resource",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "service",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      },
+      {
+        "resourceName": "offer",
+        "permissionList": [
+          "create",
+          "list",
+          "view",
+          "update",
+          "delete"
+        ]
+      }
+    ]
+  }
+]
