@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.0.2">
+  <diagram name="Page-1" id="A-Qk195VEHOQUsvSQGqP">
+    <mxGraphModel dx="984" dy="665" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-1" value="API Gw + Stateless LB" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="220" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="290" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="eSf6A_2q0DuLbTkmDbnq-3" target="eSf6A_2q0DuLbTkmDbnq-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-24" value="3. if latest file not&lt;div&gt;cached, fetch from&lt;/div&gt;&lt;div&gt;s3 and cache&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eSf6A_2q0DuLbTkmDbnq-23">
+          <mxGeometry x="-0.3692" y="2" relative="1" as="geometry">
+            <mxPoint x="27" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-3" value="Code Validation Service&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;caches input/output files in HDD/SSD&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="390" y="150" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="eSf6A_2q0DuLbTkmDbnq-6" target="eSf6A_2q0DuLbTkmDbnq-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="635" y="180" />
+              <mxPoint x="635" y="188" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-26" value="3.1 returns file" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eSf6A_2q0DuLbTkmDbnq-25">
+          <mxGeometry x="-0.4228" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-6" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
+          <mxGeometry x="730" y="110" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-7" value="Saving Test cases input/output files.&amp;nbsp;&lt;div&gt;for each problem,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;estimated&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;file size is 800mb - 2GB&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;problem_id+timestamp_of_last_updated_test_file&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="10" width="290" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-10" value="Relational DB&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="665" y="350" width="85" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-11" value="Sample Schema" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="730" y="480" width="170" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-12" value="Contest ID" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" vertex="1" parent="eSf6A_2q0DuLbTkmDbnq-11">
+          <mxGeometry y="26" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-13" value="Problems-Contest mapping&amp;nbsp;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" vertex="1" parent="eSf6A_2q0DuLbTkmDbnq-11">
+          <mxGeometry y="56" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-14" value="Last_updated_file name in s3 with timestamp" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" vertex="1" parent="eSf6A_2q0DuLbTkmDbnq-11">
+          <mxGeometry y="86" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-16" value="Code Validation Service" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="390" y="310" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-17" value="Code Validation Service" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="390" y="470" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.012;entryY=0.427;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eSf6A_2q0DuLbTkmDbnq-3" target="eSf6A_2q0DuLbTkmDbnq-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-19" value="1.checks info about&amp;nbsp;&lt;div&gt;contest&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eSf6A_2q0DuLbTkmDbnq-18">
+          <mxGeometry x="-0.2987" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.067;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eSf6A_2q0DuLbTkmDbnq-3" target="eSf6A_2q0DuLbTkmDbnq-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="465" y="90" />
+              <mxPoint x="400" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-22" value="2. check if cache contains latest&lt;div&gt;input/ouput file.&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eSf6A_2q0DuLbTkmDbnq-21">
+          <mxGeometry x="-0.1022" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.007;entryY=0.547;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eSf6A_2q0DuLbTkmDbnq-1" target="eSf6A_2q0DuLbTkmDbnq-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-29" value="&lt;b&gt;Key Take Aways.&lt;/b&gt;&lt;div&gt;- To reduce network bandwidth, we have cached input/output files which takes 800mb-2gb in app server cache(HDD)&lt;/div&gt;&lt;div&gt;- To reduce cost, used HDD instead of RAM&lt;/div&gt;&lt;div&gt;- To get immediated consistency if test cases updated, we check last updated file with timestamp from db is matching the file name&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;we cached.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="710" width="720" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eSf6A_2q0DuLbTkmDbnq-30" value="&lt;b&gt;Back The Envolope Calculations&lt;/b&gt;&lt;div&gt;- 10000 users participating in contest&lt;/div&gt;&lt;div&gt;- each contest consist of 3 questions&lt;/div&gt;&lt;div&gt;- every questions has 50 test cases&lt;br&gt;-&amp;nbsp;Test case input file size (Assumption): 10 KB&lt;/div&gt;&lt;div&gt;-&amp;nbsp;Test case output file size (Assumption): 5 KB&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;10000 users * 3 Questions * 50 test cases = 1.5 million test cases&lt;/div&gt;&lt;/div&gt;&lt;div&gt;1,500,000 * 15KB = 22,500,000KB = 22.5GB&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="45" y="803" width="370" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -63,7 +63,7 @@ func (n *Navigator) FindPath(from, to, mode string) (string, error) {
 	return strategy.CalculatePath(from, to), nil
 }
 
-func main() {
+func mainFactory() {
 	// Create the factory
 	factory := &PathStrategyFactory{}
 	// Create the navigator

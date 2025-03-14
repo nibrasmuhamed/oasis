@@ -427,6 +427,6 @@ func (c *Consistent) GetPartitionList() map[int]*Member {
 func (c *Consistent) MemberExists(name string) bool {
 	c.mu.RLock()
 	defer c.mu.RUnlock()
-	_ , exists := c.members[name]
+	_, exists := c.members[name]
 	return exists
 }
